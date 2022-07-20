@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Web.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/6b55ba7056.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">TESTIMONIAL</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Hello Coders!</h1>
+            <p>“Optimism is an occupational hazard of programming: feedback is the treatment.  
+                “Make it work, make it right, make it fast.” 
+            </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+            <input type='password'class='input-field'placeholder='Enter Password' required>
+            <input type='checkbox'class='check-box'><span>Remember Password</span>
+            <button type='submit'class='submit-btn'>Log in</button>
+         </form>
+         <form id='register' class='input-group-register'>
+             <input type='text'class='input-field'placeholder='First Name' required>
+             <input type='text'class='input-field'placeholder='Last Name ' required>
+             <input type='email'class='input-field'placeholder='Email Id' required>
+             <input type='password'class='input-field'placeholder='Enter Password' required>
+             <input type='password'class='input-field'placeholder='Confirm Password'  required>
+             <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+             <button type='submit'class='submit-btn'>Register</button>
+             </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+        var y=document.getElementById('register');
+        var z=document.getElementById('btn');
+        function register()
+        {
+            x.style.left='-400px';
+            y.style.left='50px';
+            z.style.left='110px';
+        }
+        function login()
+        {
+            x.style.left='50px';
+            y.style.left='450px';
+            z.style.left='0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    </section>
+
+    <!-- course -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p1>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                elit. Laudantium quis, dicta earum est sunt maiores, 
+                exercitationem assumenda eum esse tempora dolore magnam? 
+            Corrupti quidem ratione asperiores, alias ex aliquid suscipit!</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                elit. Laudantium quis, dicta earum est sunt maiores, 
+                exercitationem assumenda eum esse tempora dolore magnam? 
+            Corrupti quidem ratione asperiores, alias ex aliquid suscipit!</p>
+            </div><div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                elit. Laudantium quis, dicta earum est sunt maiores, 
+                exercitationem assumenda eum esse tempora dolore magnam? 
+            Corrupti quidem ratione asperiores, alias ex aliquid suscipit!</p>
+            </div>
+        </div>
+    </section>
+    <!---Team Members -->
+     
+     <section class="members"> 
+        <h1>Our Team Members</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+            elit. Laudantium quis, dicta earum est sunt maiores, 
+            exercitationem assumenda<br> eum esse tempora dolore magnam? 
+        Corrupti quidem ratione asperiores, alias ex aliquid suscipit!</p>
+
+        <div class="row">
+            <div class="members-col">
+                <img src="img1.jpg">
+                <div class="layer">
+                    <h3>Shubham.T</h3>
+                </div>
+            </div>
+            <div class="members-col">
+                <img src="img2.jpg">
+                <div class="layer">
+                    <h3>Aditi.S Pranjal.T Aditi.B</h3>
+                </div>
+             </div>
+            <div class="members-col">
+                <img src="img3.jpg">
+                <div class="layer">
+                    <h3>Atul.T</h3>
+                </div>
+               
+     </div>
+ </div>
+    </section>
+    <!-- courses we offer -->
+    <section class="courses">
+        <h1>Our Courses</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+            elit. Laudantium quis, dicta earum est sunt maiores, 
+            exercitationem assumenda<br> eum esse tempora dolore magnam? 
+        Corrupti quidem ratione asperiores, alias ex aliquid suscipit!</p>
+        <div class="row">
+            <div class="courses-col">
+                <img src="img1.jpg">
+                <h3>World class facilities</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                    elit. Laudantium quis, dicta earum est sunt maiores, 
+                    exercitationem assumenda<br> eum esse tempora dolore magnam? 
+                Corrupti quidem ratione asperiores, alias ex aliquid suscipit!</p>
+            </div>
+            <div class="courses-col">
+                <img src="img3.jpg">
+                <h3>largest playground</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                    elit. Laudantium quis, dicta earum est sunt maiores, 
+                    exercitationem assumenda<br> eum esse tempora dolore magnam? 
+                Corrupti quidem ratione asperiores, alias ex aliquid suscipit!</p>
+            </div><div class="courses-col">
+                <img src="img4.jpg">
+                <h3>cafeteria</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                    elit. Laudantium quis, dicta earum est sunt maiores, 
+                    exercitationem assumenda<br> eum esse tempora dolore magnam? 
+                Corrupti quidem ratione asperiores, alias ex aliquid suscipit!</p>
+            </div>
+        </div>
+    </section>
+<!-- testimonials -->
+<section class="testimonials">
+    <h1>What Our Users Says</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+        elit. Laudantium quis, dicta earum est sunt maiores, 
+        exercitationem assumenda<br> eum esse tempora dolore magnam? 
+    Corrupti quidem ratione asperiores, alias ex aliquid suscipit!</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="logo.png">
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                    elit. Laudantium quis, dicta earum est sunt maiores, 
+                    exercitationem assumenda<br> eum esse tempora dolore magnam? 
+                Corrupti quidem ratione asperiores, alias ex aliquid suscipit!</p>
+                <h3>Amit Trichatur</h3>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+            <div class="testimonial-col">
+                <img src="logo.png" >
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Laudantium quis, dicta earum est sunt maiores, 
+                        exercitationem assumenda<br> eum esse tempora dolore magnam? 
+                    Corrupti quidem ratione asperiores, alias ex aliquid suscipit!</p>
+                    <h3>Apriti aakriti</h3>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- call to action -->
+<section class="cta">
+    <h1>Enroll For Our Various Online Courses<br>Anywhere From The World </h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+        elit. Laudantium quis, dicta earum est sunt maiores, 
+        exerc<br>itationem assumendaeum esse tempora dolore magnam? 
+    Corrupti quidem ratione asperiores,</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+
+    </div>
+    <p>Made By AdityS <i class="fa-solid fa-alicorn"></i></p>
+</section>
+  <!-- javascript for toggle menu -->
+    <script>
+       var navLinks = document.getElementById("navLinks");
+       function showMenu(){
+           navLinks.style.right="0";
+       }
+       function hideMenu(){
+           navLinks.style.right="-200px";
+       }
+    </script>
+</body>
+</html>
